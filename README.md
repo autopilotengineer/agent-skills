@@ -55,11 +55,50 @@ Every skill inspects before editing, preserves unrelated work, reports failures 
 
 Skills can instruct an agent to read files, run commands, change code, or call external tools. Review a skill's `SKILL.md` and bundled files before installation, confirm that its permissions match your environment, and keep normal host approval prompts enabled.
 
-Preview a skill directly from GitHub:
+List the available skills without installing them:
 
 ```bash
-gh skill preview autopilotengineer/agent-skills start-feature
+npx skills add autopilotengineer/agent-skills --list
 ```
+
+Review the selected skill's `SKILL.md`, `agents/`, and `references/` files in this repository before continuing.
+
+## Install with the skills CLI (recommended)
+
+The open ecosystem's `skills` CLI is the primary cross-agent installation path. It requires Node.js and npm, runs through `npx` without a permanent CLI installation, detects supported coding agents, and lets you choose skills and destinations interactively:
+
+```bash
+npx skills add autopilotengineer/agent-skills
+```
+
+Install one skill globally for a specific agent:
+
+```bash
+npx skills add autopilotengineer/agent-skills \
+  --skill start-feature \
+  --agent codex \
+  --global
+```
+
+Install every skill globally for selected agents without prompts:
+
+```bash
+npx skills add autopilotengineer/agent-skills \
+  --skill '*' \
+  --agent codex \
+  --agent claude-code \
+  --global \
+  --yes
+```
+
+Check installed skills and apply updates:
+
+```bash
+npx skills list
+npx skills update
+```
+
+The `skills` CLI collects anonymous installation telemetry by default to power ecosystem rankings. Opt out for a command by setting `DISABLE_TELEMETRY=1`.
 
 ## Install with Claude Code marketplace
 
@@ -80,9 +119,17 @@ Refresh later with:
 
 Claude plugin skills are namespaced, for example `/pr-workflow:start-feature`.
 
-## Install with GitHub CLI
+## Alternative: Install with GitHub CLI
 
-GitHub CLI discovers the nested `plugins/<pack>/skills/<skill>` layout and installs into host-appropriate locations. Install all skills for one host at project scope (the default) or user scope:
+GitHub CLI's preview `gh skill` commands provide a GitHub-native alternative, including remote preview, version pinning, source-tracked installs, and publication validation.
+
+Preview a skill:
+
+```bash
+gh skill preview autopilotengineer/agent-skills start-feature
+```
+
+Install all skills for one host at project scope (the default) or user scope:
 
 ```bash
 gh skill install autopilotengineer/agent-skills --all --agent codex --scope user
@@ -114,7 +161,7 @@ Portable project/user locations include:
 - GitHub Copilot: `<repo>/.agents/skills/` or `$HOME/.agents/skills/`
 - Claude Code: `<repo>/.claude/skills/` or `$HOME/.claude/skills/`
 
-For Cursor and other hosts, prefer `gh skill install --agent <host>` so the installed GitHub CLI selects the current host-specific path. Example manual copy for a shared project skill:
+For Cursor and other hosts, prefer `npx skills add ... --agent <host>` so the current skills CLI selects the host-specific path. Example manual copy for a shared project skill:
 
 ```bash
 git clone https://github.com/autopilotengineer/agent-skills.git
