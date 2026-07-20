@@ -201,10 +201,16 @@ def main() -> int:
 
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     readme_markers = (
-        "/plugin marketplace add autopilotengineer/agent-skills",
-        "gh skill preview autopilotengineer/agent-skills",
+        "## Install with the skills CLI (recommended)",
+        "npx skills add autopilotengineer/agent-skills",
+        "--skill start-feature",
         "--agent codex",
         "--agent claude-code",
+        "npx skills update",
+        "DISABLE_TELEMETRY=1",
+        "/plugin marketplace add autopilotengineer/agent-skills",
+        "## Alternative: Install with GitHub CLI",
+        "gh skill preview autopilotengineer/agent-skills",
         "--agent github-copilot",
         "--agent cursor",
         "<repo>/.agents/skills/",
@@ -212,6 +218,9 @@ def main() -> int:
         "Inspect before installing",
     )
     checks.check(all(marker in readme for marker in readme_markers), "cross-agent installation docs")
+    npx_section = readme.find("## Install with the skills CLI (recommended)")
+    gh_section = readme.find("## Alternative: Install with GitHub CLI")
+    checks.check(0 <= npx_section < gh_section, "skills CLI is the primary cross-agent path")
     checks.check("Apache License" in (ROOT / "LICENSE").read_text(encoding="utf-8"), "Apache-2.0 license text")
 
     print("PROGRESS validating scenarios", file=sys.stderr)
