@@ -1,0 +1,4 @@
+interface:
+  display_name: "Submit Pull Request"
+  short_description: "Validate, push, and open a draft PR"
+  default_prompt: "Use $submit-pull-request to prepare and open a draft PR."

@@ -1,0 +1,8 @@
+{
+  "name": "pr-workflow",
+  "version": "0.1.0",
+  "description": "Safe Git and GitHub workflows from feature branch through reviewed draft pull request.",
+  "author": {
+    "name": "Autopilot Engineer"
+  }
+}

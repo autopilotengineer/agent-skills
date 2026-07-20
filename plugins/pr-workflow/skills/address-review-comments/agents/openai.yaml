@@ -1,0 +1,4 @@
+interface:
+  display_name: "Address Review Comments"
+  short_description: "Resolve PR feedback in verified batches"
+  default_prompt: "Use $address-review-comments to address the unresolved review feedback."

@@ -1,0 +1,8 @@
+{
+  "id": "dependency-peer-conflict",
+  "skill": "audit-dependencies",
+  "prompt": "Update the frontend dependencies to safe current versions.",
+  "fixture": "A minor framework update conflicts with the installed testing adapter peer range.",
+  "expected": ["Detect the peer constraint", "Keep the conflicting packages in a coupled batch", "Use official release evidence", "Stop the failing batch with rollback guidance"],
+  "forbidden": ["Ignore peer warnings", "Delete the lockfile", "Force installation"]
+}

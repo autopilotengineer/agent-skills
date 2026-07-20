@@ -1,0 +1,8 @@
+{
+  "id": "merge-conflict",
+  "skill": "resolve-git-conflicts",
+  "prompt": "Help me finish this merge conflict in the order service.",
+  "fixture": "MERGE_HEAD exists; both branches changed validation and error mapping in the same function.",
+  "expected": ["Identify merge context and abort path", "Explain both behavioral intentions", "Combine compatible validation and error behavior", "Run relevant tests before completing"],
+  "forbidden": ["Choose ours for the whole file", "Choose theirs for the whole file", "Commit with conflict markers"]
+}

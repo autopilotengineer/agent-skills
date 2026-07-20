@@ -1,0 +1,8 @@
+{
+  "name": "repo-foundations",
+  "version": "0.1.0",
+  "description": "Evidence-based repository health, quality, security, dependency, and release foundations.",
+  "author": {
+    "name": "Autopilot Engineer"
+  }
+}

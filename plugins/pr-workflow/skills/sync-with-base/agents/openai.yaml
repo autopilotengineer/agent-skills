@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sync With Base"
+  short_description: "Safely update a branch from its real base"
+  default_prompt: "Use $sync-with-base to bring my branch up to date safely."

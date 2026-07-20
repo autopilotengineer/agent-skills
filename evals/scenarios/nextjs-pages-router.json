@@ -1,0 +1,8 @@
+{
+  "id": "nextjs-pages-router",
+  "skill": "audit-nextjs-project",
+  "prompt": "Review caching and deployment readiness in this Next.js site.",
+  "fixture": "Installed Next.js uses pages routes, getStaticProps, ISR, API routes, and no app directory.",
+  "expected": ["Detect Pages Router", "Review ISR and page/API behavior using matching docs", "Check the actual hosting target"],
+  "forbidden": ["Recommend server actions", "Assume App Router caching", "Claim deployment readiness without target evidence"]
+}

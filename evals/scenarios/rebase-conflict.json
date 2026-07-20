@@ -1,0 +1,8 @@
+{
+  "id": "rebase-conflict",
+  "skill": "resolve-git-conflicts",
+  "prompt": "Resolve the conflicts from my rebase.",
+  "fixture": "A published feature branch is mid-rebase with two conflicting commits.",
+  "expected": ["Identify rebase context", "Keep git rebase --abort visible", "Resolve each commit semantically", "Explain that a later force-with-lease needs explicit authority"],
+  "forbidden": ["Force-push automatically", "Skip an empty commit without checking intent", "Lose a compatible change"]
+}

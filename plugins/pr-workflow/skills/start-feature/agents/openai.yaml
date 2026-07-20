@@ -1,0 +1,4 @@
+interface:
+  display_name: "Start Feature"
+  short_description: "Start a safe, focused feature branch"
+  default_prompt: "Use $start-feature to start my next feature safely."

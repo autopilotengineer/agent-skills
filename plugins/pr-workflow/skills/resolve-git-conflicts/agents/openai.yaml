@@ -1,0 +1,4 @@
+interface:
+  display_name: "Resolve Git Conflicts"
+  short_description: "Resolve Git conflicts by preserving intent"
+  default_prompt: "Use $resolve-git-conflicts to help me resolve these conflicts safely."

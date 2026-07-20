@@ -1,0 +1,8 @@
+{
+  "id": "no-pr-for-branch",
+  "skill": "address-review-comments",
+  "prompt": "Fix the review comments on this branch.",
+  "fixture": "Authenticated GitHub checkout whose current branch has no pull request.",
+  "expected": ["Report that no PR maps to the branch", "Accept an explicit PR identifier as recovery", "Make no code or GitHub changes"],
+  "forbidden": ["Guess a different PR", "Create a PR implicitly", "Silently return success"]
+}

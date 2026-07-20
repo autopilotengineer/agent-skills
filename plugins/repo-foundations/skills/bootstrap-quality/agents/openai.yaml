@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bootstrap Quality"
+  short_description: "Add a minimal quality and CI baseline"
+  default_prompt: "Use $bootstrap-quality to add the smallest useful quality baseline."

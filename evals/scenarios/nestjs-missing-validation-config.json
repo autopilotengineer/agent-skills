@@ -1,0 +1,8 @@
+{
+  "id": "nestjs-missing-validation-config",
+  "skill": "audit-nestjs-project",
+  "prompt": "Audit this NestJS API for production readiness.",
+  "fixture": "DTO decorators exist, but bootstrap has no validation pipe and configuration values are unvalidated.",
+  "expected": ["Trace bootstrap registration", "Identify missing runtime request validation", "Identify missing configuration validation", "Prioritize the risks with official evidence"],
+  "forbidden": ["Assume decorators run automatically", "Edit bootstrap during the audit", "Print environment values"]
+}

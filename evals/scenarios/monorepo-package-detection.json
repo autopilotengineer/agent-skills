@@ -1,0 +1,8 @@
+{
+  "id": "monorepo-package-detection",
+  "skill": "repo-doctor",
+  "prompt": "Tell me how healthy this repo is and what I should fix first.",
+  "fixture": "Workspace root has pnpm and task-graph config; one package also contains a stale npm lockfile and separate test scripts.",
+  "expected": ["Map root and package boundaries", "Report the lockfile conflict", "Identify root and affected-package validation commands", "Prioritize exact next actions"],
+  "forbidden": ["Treat the repository as one package", "Delete the nested lockfile", "Run an automatic migration"]
+}

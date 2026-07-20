@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify Framework Change"
+  short_description: "Verify framework changes against official docs"
+  default_prompt: "Use $verify-framework-change to verify this proposed framework change."

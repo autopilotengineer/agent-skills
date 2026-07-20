@@ -1,0 +1,4 @@
+interface:
+  display_name: "Checkpoint Work"
+  short_description: "Review, validate, and commit intended work"
+  default_prompt: "Use $checkpoint-work to safely commit my current changes."

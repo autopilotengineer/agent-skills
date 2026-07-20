@@ -1,0 +1,4 @@
+interface:
+  display_name: "Repository Doctor"
+  short_description: "Diagnose repository health and safeguards"
+  default_prompt: "Use $repo-doctor to assess this repository and prioritize next steps."

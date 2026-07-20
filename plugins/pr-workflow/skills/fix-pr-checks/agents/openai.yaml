@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fix PR Checks"
+  short_description: "Diagnose and fix failing GitHub checks"
+  default_prompt: "Use $fix-pr-checks to diagnose the failing checks on my PR."

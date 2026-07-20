@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Agent Context"
+  short_description: "Create concise evidence-based agent guidance"
+  default_prompt: "Use $write-agent-context to improve this repository agent guidance."

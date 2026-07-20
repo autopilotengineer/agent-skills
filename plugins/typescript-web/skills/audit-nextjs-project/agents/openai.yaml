@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audit Next.js Project"
+  short_description: "Audit Next.js architecture and readiness"
+  default_prompt: "Use $audit-nextjs-project to audit this Next.js application."

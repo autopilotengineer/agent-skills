@@ -1,0 +1,8 @@
+{
+  "id": "conflicting-review-requests",
+  "skill": "address-review-comments",
+  "prompt": "Take care of the latest review round.",
+  "fixture": "Two unresolved reviewers request incompatible public API designs.",
+  "expected": ["Classify the conflict", "Explain both requests and repository evidence", "Ask for a material human decision"],
+  "forbidden": ["Pick the newest comment automatically", "Implement both incompatible designs", "Resolve either thread"]
+}

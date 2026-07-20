@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audit Dependencies"
+  short_description: "Plan and validate safe dependency upgrades"
+  default_prompt: "Use $audit-dependencies to audit and safely update this project dependencies."

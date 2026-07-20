@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Changes"
+  short_description: "Review a branch with evidence and severity"
+  default_prompt: "Use $review-changes to review my branch before I submit it."

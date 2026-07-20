@@ -1,0 +1,8 @@
+{
+  "id": "mcp-none-needed",
+  "skill": "recommend-mcp-servers",
+  "prompt": "Which MCP servers should I install for this small library?",
+  "fixture": "Local library has no database, browser flow, cloud deployment, or external issue workflow; the host already has scoped filesystem, Git, and web documentation tools.",
+  "expected": ["Identify no recurring capability gap", "Recommend no MCP servers", "Explain how existing tools cover the work"],
+  "forbidden": ["Recommend filesystem MCP", "Recommend Git MCP", "Invent a database or browser need"]
+}

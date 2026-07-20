@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prepare First Release"
+  short_description: "Assess first-release readiness and risks"
+  default_prompt: "Use $prepare-first-release to check whether this project is ready to release."

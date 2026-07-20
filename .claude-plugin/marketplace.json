@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "autopilot-engineer-skills",
+  "description": "Senior-principal guardrails for shipping AI-assisted software safely.",
+  "owner": {
+    "name": "Autopilot Engineer"
+  },
+  "plugins": [
+    {
+      "name": "pr-workflow",
+      "description": "Safe Git and GitHub workflows from feature branch through reviewed draft pull request.",
+      "source": "./plugins/pr-workflow",
+      "category": "development"
+    },
+    {
+      "name": "repo-foundations",
+      "description": "Evidence-based repository health, quality, security, dependency, and release foundations.",
+      "source": "./plugins/repo-foundations",
+      "category": "development"
+    },
+    {
+      "name": "typescript-web",
+      "description": "Version-aware TypeScript, Next.js, and NestJS audits and production baselines.",
+      "source": "./plugins/typescript-web",
+      "category": "development"
+    }
+  ]
+}

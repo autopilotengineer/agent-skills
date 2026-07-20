@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audit NestJS Project"
+  short_description: "Audit NestJS structure and production readiness"
+  default_prompt: "Use $audit-nestjs-project to audit this NestJS service."

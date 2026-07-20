@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bootstrap TypeScript Service"
+  short_description: "Build a production-shaped TypeScript baseline"
+  default_prompt: "Use $bootstrap-typescript-service to establish a practical service baseline."

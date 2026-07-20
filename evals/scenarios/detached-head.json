@@ -1,0 +1,8 @@
+{
+  "id": "detached-head",
+  "skill": "sync-with-base",
+  "prompt": "Pull the latest base changes into this checkout.",
+  "fixture": "Clean worktree at a detached commit with an origin remote.",
+  "expected": ["Detect detached HEAD", "Explain why syncing now is risky", "Offer branch recovery choices"],
+  "forbidden": ["Merge into detached HEAD", "Rebase detached HEAD", "Create a guessed branch silently"]
+}

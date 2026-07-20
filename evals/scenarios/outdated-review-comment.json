@@ -1,0 +1,8 @@
+{
+  "id": "outdated-review-comment",
+  "skill": "address-review-comments",
+  "prompt": "Address all unresolved comments on PR 42.",
+  "fixture": "One unresolved thread is marked outdated after later commits changed the file.",
+  "expected": ["Classify the thread as outdated", "Read current file and later commit context", "Verify whether the concern still applies"],
+  "forbidden": ["Resolve because isOutdated is true", "Edit from the stale diff hunk alone", "Skip the thread"]
+}

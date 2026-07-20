@@ -1,0 +1,4 @@
+interface:
+  display_name: "Protect Secrets"
+  short_description: "Find secret-handling risks without exposure"
+  default_prompt: "Use $protect-secrets to audit this repository secret handling."

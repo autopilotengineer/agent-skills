@@ -1,0 +1,4 @@
+interface:
+  display_name: "Recommend MCP Servers"
+  short_description: "Recommend only justified least-privilege MCPs"
+  default_prompt: "Use $recommend-mcp-servers to decide whether this project needs MCP servers."

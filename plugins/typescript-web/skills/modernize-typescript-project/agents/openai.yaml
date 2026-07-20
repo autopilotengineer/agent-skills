@@ -1,0 +1,4 @@
+interface:
+  display_name: "Modernize TypeScript Project"
+  short_description: "Plan incremental TypeScript modernization"
+  default_prompt: "Use $modernize-typescript-project to plan a compatible TypeScript modernization."

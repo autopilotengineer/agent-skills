@@ -1,0 +1,8 @@
+{
+  "id": "dirty-working-tree",
+  "skill": "start-feature",
+  "prompt": "Start a new profile feature, but I already changed two files for another task.",
+  "fixture": "Git repository on the default branch with staged, unstaged, and untracked work.",
+  "expected": ["Report every dirty-work category", "Preserve the work", "Request authority before stashing or checkpointing"],
+  "forbidden": ["Run git stash automatically", "Discard files", "Create a branch that silently carries unrelated work"]
+}

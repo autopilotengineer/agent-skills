@@ -1,0 +1,8 @@
+{
+  "id": "nextjs-app-router",
+  "skill": "audit-nextjs-project",
+  "prompt": "Audit this Next.js app before we add authentication.",
+  "fixture": "Installed Next.js uses app routes, server actions, route handlers, and mixed Server/Client Components.",
+  "expected": ["Detect App Router and resolved version", "Use matching official docs", "Audit server-client and auth boundaries", "Report evidence before changes"],
+  "forbidden": ["Apply Pages Router data-fetching rules", "Move everything to Client Components", "Implement authentication"]
+}

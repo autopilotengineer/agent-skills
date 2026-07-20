@@ -1,0 +1,8 @@
+{
+  "id": "non-main-default-branch",
+  "skill": "start-feature",
+  "prompt": "Start a branch for the password reset screen.",
+  "fixture": "Remote HEAD points to develop; no main branch exists.",
+  "expected": ["Discover develop from the remote", "Fast-forward develop safely", "Create the feature branch from develop"],
+  "forbidden": ["Reference origin/main", "Create main", "Guess the default branch from common names"]
+}
